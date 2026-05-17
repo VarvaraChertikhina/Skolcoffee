@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_546ef6674764bb527bad25ee34d78ca3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_546ef6674764bb527bad25ee34d78ca3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_546ef6674764bb527bad25ee34d78ca3 = L.map(
+                "map_546ef6674764bb527bad25ee34d78ca3",
+                {
+                    center: [55.693394, 37.351932],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_abba600babd4bf208ec020473148d8aa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_abba600babd4bf208ec020473148d8aa.addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var circle_3217bae26e142c1fb498e195286877c3 = L.circle(
+                [55.693394, 37.351932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 2}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+        var popup_69fbb893fd11379f73b8da18d77183bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82d2d44bd88d5ad2ea6bb2e7efb6aba5 = $(`<div id="html_82d2d44bd88d5ad2ea6bb2e7efb6aba5" style="width: 100.0%; height: 100.0%;">300 м</div>`)[0];
+                popup_69fbb893fd11379f73b8da18d77183bb.setContent(html_82d2d44bd88d5ad2ea6bb2e7efb6aba5);
+            
+        
+
+        circle_3217bae26e142c1fb498e195286877c3.bindPopup(popup_69fbb893fd11379f73b8da18d77183bb)
+        ;
+
+        
+    
+    
+            var circle_223267402024651a979ea14fb37344d8 = L.circle(
+                [55.693394, 37.351932],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 2}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+        var popup_ae12190356591c8002057092afc46177 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5a7d2753e77ac253cd83fa2cad180f8 = $(`<div id="html_c5a7d2753e77ac253cd83fa2cad180f8" style="width: 100.0%; height: 100.0%;">500 м</div>`)[0];
+                popup_ae12190356591c8002057092afc46177.setContent(html_c5a7d2753e77ac253cd83fa2cad180f8);
+            
+        
+
+        circle_223267402024651a979ea14fb37344d8.bindPopup(popup_ae12190356591c8002057092afc46177)
+        ;
+
+        
+    
+    
+            var circle_47d8f21b0cc4dfc84a1ed43ff5d39d79 = L.circle(
+                [55.693394, 37.351932],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 2}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+        var popup_1aaa3ce59b5c555f5ae05a072d6fb15f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b452391931b9bc281542b6cf36cb5958 = $(`<div id="html_b452391931b9bc281542b6cf36cb5958" style="width: 100.0%; height: 100.0%;">1000 м</div>`)[0];
+                popup_1aaa3ce59b5c555f5ae05a072d6fb15f.setContent(html_b452391931b9bc281542b6cf36cb5958);
+            
+        
+
+        circle_47d8f21b0cc4dfc84a1ed43ff5d39d79.bindPopup(popup_1aaa3ce59b5c555f5ae05a072d6fb15f)
+        ;
+
+        
+    
+    
+            var marker_dcc6cb4d8e745f0bf2bfbc09e32e5fca = L.marker(
+                [55.693394, 37.351932],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_1e17389f7a12fc18297a350f67ff5ea4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a62ecdb395cc5c93f9654bade0e35aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cec2ba54ca75553e9b4b6a427ec33e0 = $(`<div id="html_9cec2ba54ca75553e9b4b6a427ec33e0" style="width: 100.0%; height: 100.0%;"><b> НАША КОФЕЙНЯ</b></div>`)[0];
+                popup_1a62ecdb395cc5c93f9654bade0e35aa.setContent(html_9cec2ba54ca75553e9b4b6a427ec33e0);
+            
+        
+
+        marker_dcc6cb4d8e745f0bf2bfbc09e32e5fca.bindPopup(popup_1a62ecdb395cc5c93f9654bade0e35aa)
+        ;
+
+        
+    
+    
+                marker_dcc6cb4d8e745f0bf2bfbc09e32e5fca.setIcon(icon_1e17389f7a12fc18297a350f67ff5ea4);
+            
+    
+            var marker_c6f8ebe112025b8a4ac614a974482968 = L.marker(
+                [55.693561, 37.351725],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_728aa334903a9f38b90bbf992a202d31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a1335231c1983a912290392fcb765e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16f3f50ce7a59c6af8ec7cd295d700d4 = $(`<div id="html_16f3f50ce7a59c6af8ec7cd295d700d4" style="width: 100.0%; height: 100.0%;"><b>ВкусВилл, кафе</b><br>улица Зворыкина, 1 к4<br> 0.02 км</div>`)[0];
+                popup_1a1335231c1983a912290392fcb765e8.setContent(html_16f3f50ce7a59c6af8ec7cd295d700d4);
+            
+        
+
+        marker_c6f8ebe112025b8a4ac614a974482968.bindPopup(popup_1a1335231c1983a912290392fcb765e8)
+        ;
+
+        
+    
+    
+                marker_c6f8ebe112025b8a4ac614a974482968.setIcon(icon_728aa334903a9f38b90bbf992a202d31);
+            
+    
+            var marker_4fd126e554b84545bc33b041181606d0 = L.marker(
+                [55.69287, 37.35161],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_c396c621586b374cc03236e4af22b177 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d074f2ddf30bf8fedeeb7c5af52662a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d732f2a1f3e2b5ab9d4e3e4178ab135 = $(`<div id="html_5d732f2a1f3e2b5ab9d4e3e4178ab135" style="width: 100.0%; height: 100.0%;"><b>camper coffee, кофейня</b><br>улица Зворыкина, 2 к2<br> 0.06 км</div>`)[0];
+                popup_d074f2ddf30bf8fedeeb7c5af52662a9.setContent(html_5d732f2a1f3e2b5ab9d4e3e4178ab135);
+            
+        
+
+        marker_4fd126e554b84545bc33b041181606d0.bindPopup(popup_d074f2ddf30bf8fedeeb7c5af52662a9)
+        ;
+
+        
+    
+    
+                marker_4fd126e554b84545bc33b041181606d0.setIcon(icon_c396c621586b374cc03236e4af22b177);
+            
+    
+            var marker_ddbee067b1d79986e3104e2c216e2d6d = L.marker(
+                [55.692318, 37.347485],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_622cb26f58c710c6e4089c16fe11e1cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_590009adfd61c1d07bf1a094560ccac4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_397ba3ab2bc9be458385edc55160ebdc = $(`<div id="html_397ba3ab2bc9be458385edc55160ebdc" style="width: 100.0%; height: 100.0%;"><b>Camera Obscura, экспресс-кофейня</b><br>Большой бульвар, 42 ст1<br> 0.30 км</div>`)[0];
+                popup_590009adfd61c1d07bf1a094560ccac4.setContent(html_397ba3ab2bc9be458385edc55160ebdc);
+            
+        
+
+        marker_ddbee067b1d79986e3104e2c216e2d6d.bindPopup(popup_590009adfd61c1d07bf1a094560ccac4)
+        ;
+
+        
+    
+    
+                marker_ddbee067b1d79986e3104e2c216e2d6d.setIcon(icon_622cb26f58c710c6e4089c16fe11e1cf);
+            
+    
+            var marker_596bd356b69e960f67ccde7514ef2890 = L.marker(
+                [55.692318, 37.347485],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_b593c18a6876b5c9a1c1e2d00e59cc27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b705a6f954fc385848aa641d20791ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da39720c4ce6ca16c881a08d1f5093ab = $(`<div id="html_da39720c4ce6ca16c881a08d1f5093ab" style="width: 100.0%; height: 100.0%;"><b>Clever, кофейня</b><br>Большой бульвар, 42 ст1<br> 0.30 км</div>`)[0];
+                popup_9b705a6f954fc385848aa641d20791ae.setContent(html_da39720c4ce6ca16c881a08d1f5093ab);
+            
+        
+
+        marker_596bd356b69e960f67ccde7514ef2890.bindPopup(popup_9b705a6f954fc385848aa641d20791ae)
+        ;
+
+        
+    
+    
+                marker_596bd356b69e960f67ccde7514ef2890.setIcon(icon_b593c18a6876b5c9a1c1e2d00e59cc27);
+            
+    
+            var marker_232d7b6f15d0de86d935dcc5d977d7fe = L.marker(
+                [55.692318, 37.347485],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_0bb6b07734d8b7ce15ff9f360e7e78bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02e9c6aa3bd0491b3fa4da5275bdfe38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_558b1c1cf87b5ed6d179b30134148238 = $(`<div id="html_558b1c1cf87b5ed6d179b30134148238" style="width: 100.0%; height: 100.0%;"><b>Гусси кофе, кофейня</b><br>Большой бульвар, 42 ст1<br> 0.30 км</div>`)[0];
+                popup_02e9c6aa3bd0491b3fa4da5275bdfe38.setContent(html_558b1c1cf87b5ed6d179b30134148238);
+            
+        
+
+        marker_232d7b6f15d0de86d935dcc5d977d7fe.bindPopup(popup_02e9c6aa3bd0491b3fa4da5275bdfe38)
+        ;
+
+        
+    
+    
+                marker_232d7b6f15d0de86d935dcc5d977d7fe.setIcon(icon_0bb6b07734d8b7ce15ff9f360e7e78bf);
+            
+    
+            var marker_5d5958dbbc14d9ca49e7435adf0413dc = L.marker(
+                [55.692318, 37.347485],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_c2a90f392b5f464cccb8cdf21501f8be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37b8a1adb14c5495178a8b7dd5180de0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b028a248a0bb07d8f41813512f0fddee = $(`<div id="html_b028a248a0bb07d8f41813512f0fddee" style="width: 100.0%; height: 100.0%;"><b>Urban coffee, кофейня</b><br>Большой бульвар, 42 ст1<br> 0.30 км</div>`)[0];
+                popup_37b8a1adb14c5495178a8b7dd5180de0.setContent(html_b028a248a0bb07d8f41813512f0fddee);
+            
+        
+
+        marker_5d5958dbbc14d9ca49e7435adf0413dc.bindPopup(popup_37b8a1adb14c5495178a8b7dd5180de0)
+        ;
+
+        
+    
+    
+                marker_5d5958dbbc14d9ca49e7435adf0413dc.setIcon(icon_c2a90f392b5f464cccb8cdf21501f8be);
+            
+    
+            var marker_ae66625b70abe415e43a000b0f1c3d22 = L.marker(
+                [55.695261, 37.347135],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_dda9d8a43aaf104779ffecaee8edb782 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6e68b3041fd4037f34bf0730eeb372d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea06592c472a91dfbce2087e67d12e09 = $(`<div id="html_ea06592c472a91dfbce2087e67d12e09" style="width: 100.0%; height: 100.0%;"><b>One Price Coffee, кофейня</b><br>Большой бульвар, 40<br> 0.37 км</div>`)[0];
+                popup_c6e68b3041fd4037f34bf0730eeb372d.setContent(html_ea06592c472a91dfbce2087e67d12e09);
+            
+        
+
+        marker_ae66625b70abe415e43a000b0f1c3d22.bindPopup(popup_c6e68b3041fd4037f34bf0730eeb372d)
+        ;
+
+        
+    
+    
+                marker_ae66625b70abe415e43a000b0f1c3d22.setIcon(icon_dda9d8a43aaf104779ffecaee8edb782);
+            
+    
+            var marker_e5feb99cc04d587d18983bf027cd921c = L.marker(
+                [55.695261, 37.347135],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_7f3a0698286d53e7c6bd8ae1e4bea5af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f226811222f31c42fdc0a4a4b77a981 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6dfa465c6422c14f2a66fdd89ff314c = $(`<div id="html_c6dfa465c6422c14f2a66fdd89ff314c" style="width: 100.0%; height: 100.0%;"><b>Кофе твой друг, кофейня</b><br>Большой бульвар, 40<br> 0.37 км</div>`)[0];
+                popup_4f226811222f31c42fdc0a4a4b77a981.setContent(html_c6dfa465c6422c14f2a66fdd89ff314c);
+            
+        
+
+        marker_e5feb99cc04d587d18983bf027cd921c.bindPopup(popup_4f226811222f31c42fdc0a4a4b77a981)
+        ;
+
+        
+    
+    
+                marker_e5feb99cc04d587d18983bf027cd921c.setIcon(icon_7f3a0698286d53e7c6bd8ae1e4bea5af);
+            
+    
+            var marker_e3b25342c7b5c0eef02a5f79a8a3ece3 = L.marker(
+                [55.695261, 37.347135],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_84a53ec94015b4a99fb133bf67169d53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f2885c129db78b8bd43b37708f9b511 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e620bd8bac26dac1eb9e35ae586c911 = $(`<div id="html_1e620bd8bac26dac1eb9e35ae586c911" style="width: 100.0%; height: 100.0%;"><b>amore, кафе-джелатерия</b><br>Большой бульвар, 40<br> 0.37 км</div>`)[0];
+                popup_3f2885c129db78b8bd43b37708f9b511.setContent(html_1e620bd8bac26dac1eb9e35ae586c911);
+            
+        
+
+        marker_e3b25342c7b5c0eef02a5f79a8a3ece3.bindPopup(popup_3f2885c129db78b8bd43b37708f9b511)
+        ;
+
+        
+    
+    
+                marker_e3b25342c7b5c0eef02a5f79a8a3ece3.setIcon(icon_84a53ec94015b4a99fb133bf67169d53);
+            
+    
+            var marker_4320073a3fe3ea2c930a85276d6776d5 = L.marker(
+                [55.695261, 37.347135],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_1f9a9a898126b824f0f2ac6c1ef5f8b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80291607e8beaa3083fb2c21fdc855c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59399b6caaa2e3b683f7a3e34bafbbbe = $(`<div id="html_59399b6caaa2e3b683f7a3e34bafbbbe" style="width: 100.0%; height: 100.0%;"><b>Буста, кофейня</b><br>Большой бульвар, 40<br> 0.37 км</div>`)[0];
+                popup_80291607e8beaa3083fb2c21fdc855c3.setContent(html_59399b6caaa2e3b683f7a3e34bafbbbe);
+            
+        
+
+        marker_4320073a3fe3ea2c930a85276d6776d5.bindPopup(popup_80291607e8beaa3083fb2c21fdc855c3)
+        ;
+
+        
+    
+    
+                marker_4320073a3fe3ea2c930a85276d6776d5.setIcon(icon_1f9a9a898126b824f0f2ac6c1ef5f8b8);
+            
+    
+            var marker_45619f3d0e75422e812211c5437049c0 = L.marker(
+                [55.68969, 37.35164],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_d3f52039356eb4a4269284cc1fcd1639 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd7863619bfc54f789d38fe790dea4d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_141cfe84de477a52c2d0215b6e894900 = $(`<div id="html_141cfe84de477a52c2d0215b6e894900" style="width: 100.0%; height: 100.0%;"><b>ВкусВилл, кафе</b><br>улица Зворыкина, 14 к2<br> 0.41 км</div>`)[0];
+                popup_cd7863619bfc54f789d38fe790dea4d8.setContent(html_141cfe84de477a52c2d0215b6e894900);
+            
+        
+
+        marker_45619f3d0e75422e812211c5437049c0.bindPopup(popup_cd7863619bfc54f789d38fe790dea4d8)
+        ;
+
+        
+    
+    
+                marker_45619f3d0e75422e812211c5437049c0.setIcon(icon_d3f52039356eb4a4269284cc1fcd1639);
+            
+    
+            var marker_305e3815fedc278d2bea7f4088039da0 = L.marker(
+                [55.695225, 37.34532],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_80ea79b849d9c5dd987e6dd07d806c09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "surfing",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_898d62bc51f0044634e48026030e3c33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0706100d1d6b294f153a9527bda684ab = $(`<div id="html_0706100d1d6b294f153a9527bda684ab" style="width: 100.0%; height: 100.0%;"><b>Surf Coffee x Stratos</b><br>улица Николы Теслы, 1 ст1<br> 0.46 км</div>`)[0];
+                popup_898d62bc51f0044634e48026030e3c33.setContent(html_0706100d1d6b294f153a9527bda684ab);
+            
+        
+
+        marker_305e3815fedc278d2bea7f4088039da0.bindPopup(popup_898d62bc51f0044634e48026030e3c33)
+        ;
+
+        
+    
+    
+                marker_305e3815fedc278d2bea7f4088039da0.setIcon(icon_80ea79b849d9c5dd987e6dd07d806c09);
+            
+    
+            var marker_c69f47a3afac8389f6e112ff3ebeb2f6 = L.marker(
+                [55.698538, 37.359576],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_73c8c9b458b43acac37c0d3b1651d048 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26ddceb5d1cf13e22d0e7f4dbd025a4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6187bb705fa79ad79fc80b4d42170bc0 = $(`<div id="html_6187bb705fa79ad79fc80b4d42170bc0" style="width: 100.0%; height: 100.0%;"><b>Кофейня</b><br>Большой бульвар, 30 ст1<br> 0.75 км</div>`)[0];
+                popup_26ddceb5d1cf13e22d0e7f4dbd025a4c.setContent(html_6187bb705fa79ad79fc80b4d42170bc0);
+            
+        
+
+        marker_c69f47a3afac8389f6e112ff3ebeb2f6.bindPopup(popup_26ddceb5d1cf13e22d0e7f4dbd025a4c)
+        ;
+
+        
+    
+    
+                marker_c69f47a3afac8389f6e112ff3ebeb2f6.setIcon(icon_73c8c9b458b43acac37c0d3b1651d048);
+            
+    
+            var marker_eda6e6e3ae759a6d2019e5545169b9c2 = L.marker(
+                [55.698538, 37.359576],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_976dccc0879b90f56786ee1308c6caab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e793e2e06863b6d4b4b7be8fbbc503e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7809cdc83b49fbc2076ecb66018d2a1d = $(`<div id="html_7809cdc83b49fbc2076ecb66018d2a1d" style="width: 100.0%; height: 100.0%;"><b>57 Кофе</b><br>Большой бульвар, 30 ст1<br> 0.75 км</div>`)[0];
+                popup_2e793e2e06863b6d4b4b7be8fbbc503e.setContent(html_7809cdc83b49fbc2076ecb66018d2a1d);
+            
+        
+
+        marker_eda6e6e3ae759a6d2019e5545169b9c2.bindPopup(popup_2e793e2e06863b6d4b4b7be8fbbc503e)
+        ;
+
+        
+    
+    
+                marker_eda6e6e3ae759a6d2019e5545169b9c2.setIcon(icon_976dccc0879b90f56786ee1308c6caab);
+            
+    
+            var marker_51f511a33e5bf05d4b3a57dc8de0371e = L.marker(
+                [55.699, 37.343029],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_3b19498e1473435829b1dbda9bbd575a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7844a654a273b20036ebe6d14b25e8f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b472ab70f92b572b00a10e3c2db75c65 = $(`<div id="html_b472ab70f92b572b00a10e3c2db75c65" style="width: 100.0%; height: 100.0%;"><b>По Фрейду, экспресс-кофейня</b><br>Западная улица, ст180<br> 0.84 км</div>`)[0];
+                popup_7844a654a273b20036ebe6d14b25e8f0.setContent(html_b472ab70f92b572b00a10e3c2db75c65);
+            
+        
+
+        marker_51f511a33e5bf05d4b3a57dc8de0371e.bindPopup(popup_7844a654a273b20036ebe6d14b25e8f0)
+        ;
+
+        
+    
+    
+                marker_51f511a33e5bf05d4b3a57dc8de0371e.setIcon(icon_3b19498e1473435829b1dbda9bbd575a);
+            
+    
+            var marker_e6c79dac9567ec218be645978480db07 = L.marker(
+                [55.685797, 37.351482],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_5ea45039b5879f956ca06c67c903a443 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47b4d4de45773e544d182ffa0210ce09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d38b815aa5b49e085e6c78ab9815ec92 = $(`<div id="html_d38b815aa5b49e085e6c78ab9815ec92" style="width: 100.0%; height: 100.0%;"><b>Althaus, кофейня</b><br>Большой бульвар, 44<br> 0.85 км</div>`)[0];
+                popup_47b4d4de45773e544d182ffa0210ce09.setContent(html_d38b815aa5b49e085e6c78ab9815ec92);
+            
+        
+
+        marker_e6c79dac9567ec218be645978480db07.bindPopup(popup_47b4d4de45773e544d182ffa0210ce09)
+        ;
+
+        
+    
+    
+                marker_e6c79dac9567ec218be645978480db07.setIcon(icon_5ea45039b5879f956ca06c67c903a443);
+            
+    
+            var marker_aa93866bae728fd9bf42683a48e6f2d4 = L.marker(
+                [55.699497, 37.343649],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_ae6a5cacf551c38d38d1708090812dd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "surfing",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99f7f9e22e124a1798c959b175b1e2c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db8ee07a76de6668709222a8a403edc2 = $(`<div id="html_db8ee07a76de6668709222a8a403edc2" style="width: 100.0%; height: 100.0%;"><b>Surf coffee x Startup, кофейня</b><br>Западная улица, 181<br> 0.85 км</div>`)[0];
+                popup_99f7f9e22e124a1798c959b175b1e2c3.setContent(html_db8ee07a76de6668709222a8a403edc2);
+            
+        
+
+        marker_aa93866bae728fd9bf42683a48e6f2d4.bindPopup(popup_99f7f9e22e124a1798c959b175b1e2c3)
+        ;
+
+        
+    
+    
+                marker_aa93866bae728fd9bf42683a48e6f2d4.setIcon(icon_ae6a5cacf551c38d38d1708090812dd9);
+            
+    
+            var marker_7bb1d5cfb52b65bd9d1237ff2dbc2013 = L.marker(
+                [55.701125, 37.358489],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_2d62ba28208d95a8c59f5bddb9a332b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_400c0ec901be7725ee5f82aba3180c48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_670e6c537858d0b6f457a21c4cd969c3 = $(`<div id="html_670e6c537858d0b6f457a21c4cd969c3" style="width: 100.0%; height: 100.0%;"><b>Specialty, экспресс-кофейня</b><br>бульвар Эйнштейна, 1<br> 0.95 км</div>`)[0];
+                popup_400c0ec901be7725ee5f82aba3180c48.setContent(html_670e6c537858d0b6f457a21c4cd969c3);
+            
+        
+
+        marker_7bb1d5cfb52b65bd9d1237ff2dbc2013.bindPopup(popup_400c0ec901be7725ee5f82aba3180c48)
+        ;
+
+        
+    
+    
+                marker_7bb1d5cfb52b65bd9d1237ff2dbc2013.setIcon(icon_2d62ba28208d95a8c59f5bddb9a332b0);
+            
+    
+            var marker_9775d5ead8fc430741ead0d6546ca260 = L.marker(
+                [55.700775, 37.360079],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_c4462b7a9dc70b2d9932d86eff3d6ea8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7062a1210c1d8151d17a02139ba737ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03ac9408827eaf31725fb7d03077e3a0 = $(`<div id="html_03ac9408827eaf31725fb7d03077e3a0" style="width: 100.0%; height: 100.0%;"><b>Снегири, кофейня</b><br>бульвар Эйнштейна, 2<br> 0.97 км</div>`)[0];
+                popup_7062a1210c1d8151d17a02139ba737ca.setContent(html_03ac9408827eaf31725fb7d03077e3a0);
+            
+        
+
+        marker_9775d5ead8fc430741ead0d6546ca260.bindPopup(popup_7062a1210c1d8151d17a02139ba737ca)
+        ;
+
+        
+    
+    
+                marker_9775d5ead8fc430741ead0d6546ca260.setIcon(icon_c4462b7a9dc70b2d9932d86eff3d6ea8);
+            
+    
+            var marker_37bd54031ad7a95072bd784126740762 = L.marker(
+                [55.700775, 37.360079],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_158462f859263ae0c4647698c45e3e20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b41850af8162089cb9dea3e6f25c181 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67e7b3a0ffdea2121b15e4a466b79e49 = $(`<div id="html_67e7b3a0ffdea2121b15e4a466b79e49" style="width: 100.0%; height: 100.0%;"><b>ВкусВилл, кафе</b><br>бульвар Эйнштейна, 2<br> 0.97 км</div>`)[0];
+                popup_4b41850af8162089cb9dea3e6f25c181.setContent(html_67e7b3a0ffdea2121b15e4a466b79e49);
+            
+        
+
+        marker_37bd54031ad7a95072bd784126740762.bindPopup(popup_4b41850af8162089cb9dea3e6f25c181)
+        ;
+
+        
+    
+    
+                marker_37bd54031ad7a95072bd784126740762.setIcon(icon_158462f859263ae0c4647698c45e3e20);
+            
+    
+            var marker_553dd0c25bb13cee732bc1d10e8003d4 = L.marker(
+                [55.701749, 37.357465],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_058ad23a9666b021787a23f3dad8afef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdcc05c4af46554af1f9891e08ceebcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e08e1f6421fc0b1b156fbeae5caf695 = $(`<div id="html_5e08e1f6421fc0b1b156fbeae5caf695" style="width: 100.0%; height: 100.0%;"><b>Здрасте, кофейня</b><br>бульвар Эйнштейна, к5<br> 0.99 км</div>`)[0];
+                popup_bdcc05c4af46554af1f9891e08ceebcf.setContent(html_5e08e1f6421fc0b1b156fbeae5caf695);
+            
+        
+
+        marker_553dd0c25bb13cee732bc1d10e8003d4.bindPopup(popup_bdcc05c4af46554af1f9891e08ceebcf)
+        ;
+
+        
+    
+    
+                marker_553dd0c25bb13cee732bc1d10e8003d4.setIcon(icon_058ad23a9666b021787a23f3dad8afef);
+            
+    
+            var marker_fccf3fe4cf4ade143532df78da6d7571 = L.marker(
+                [55.696976, 37.336705],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_9001c44945033a91310a865540d730be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_776ad6a452e728fbdf2a67ac30139360 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c23d5d628665fbb355295615aded016c = $(`<div id="html_c23d5d628665fbb355295615aded016c" style="width: 100.0%; height: 100.0%;"><b>Coffee, кофейня</b><br>Трёхгорная улица, 6<br> 1.03 км</div>`)[0];
+                popup_776ad6a452e728fbdf2a67ac30139360.setContent(html_c23d5d628665fbb355295615aded016c);
+            
+        
+
+        marker_fccf3fe4cf4ade143532df78da6d7571.bindPopup(popup_776ad6a452e728fbdf2a67ac30139360)
+        ;
+
+        
+    
+    
+                marker_fccf3fe4cf4ade143532df78da6d7571.setIcon(icon_9001c44945033a91310a865540d730be);
+            
+    
+            var marker_069ee1c44047e611bcb5f05d076aed1d = L.marker(
+                [55.695961, 37.335681],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_eec098a98bf9e242d3fd18ebd591a3c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a20b205b3d7468d3cc6c2a994774904d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbb57bf8a397341a9860da0a7be21ee2 = $(`<div id="html_fbb57bf8a397341a9860da0a7be21ee2" style="width: 100.0%; height: 100.0%;"><b>Specialty, экспресс-кофейня</b><br>Трёхгорная улица, 4<br> 1.06 км</div>`)[0];
+                popup_a20b205b3d7468d3cc6c2a994774904d.setContent(html_fbb57bf8a397341a9860da0a7be21ee2);
+            
+        
+
+        marker_069ee1c44047e611bcb5f05d076aed1d.bindPopup(popup_a20b205b3d7468d3cc6c2a994774904d)
+        ;
+
+        
+    
+    
+                marker_069ee1c44047e611bcb5f05d076aed1d.setIcon(icon_eec098a98bf9e242d3fd18ebd591a3c7);
+            
+    
+            var marker_37a6c6cd8304025a1198054ab5363b7a = L.marker(
+                [55.701333, 37.361705],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_05aced725fc2c9baba0cccc76db6072e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d57fea1d8d4129cd8a202be89c8fd41d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fe149e08c441053588f1405b5fb9d70 = $(`<div id="html_1fe149e08c441053588f1405b5fb9d70" style="width: 100.0%; height: 100.0%;"><b>Do.Bro Кофе</b><br>бульвар Эйнштейна, 3<br> 1.07 км</div>`)[0];
+                popup_d57fea1d8d4129cd8a202be89c8fd41d.setContent(html_1fe149e08c441053588f1405b5fb9d70);
+            
+        
+
+        marker_37a6c6cd8304025a1198054ab5363b7a.bindPopup(popup_d57fea1d8d4129cd8a202be89c8fd41d)
+        ;
+
+        
+    
+    
+                marker_37a6c6cd8304025a1198054ab5363b7a.setIcon(icon_05aced725fc2c9baba0cccc76db6072e);
+            
+    
+            var marker_8f24a56f4637a3f3189a70fab86c7af5 = L.marker(
+                [55.7005, 37.365],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_bc04a893e7c41e3dd0061f9b2d27443a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad50ddf76fefedf8aa6c94555ec87ea8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5930f2972916be8ec1f63f9e3e8cc351 = $(`<div id="html_5930f2972916be8ec1f63f9e3e8cc351" style="width: 100.0%; height: 100.0%;"><b>Кантата, магазин кофе и сладостей</b><br>Западная улица, ст180<br> 1.14 км</div>`)[0];
+                popup_ad50ddf76fefedf8aa6c94555ec87ea8.setContent(html_5930f2972916be8ec1f63f9e3e8cc351);
+            
+        
+
+        marker_8f24a56f4637a3f3189a70fab86c7af5.bindPopup(popup_ad50ddf76fefedf8aa6c94555ec87ea8)
+        ;
+
+        
+    
+    
+                marker_8f24a56f4637a3f3189a70fab86c7af5.setIcon(icon_bc04a893e7c41e3dd0061f9b2d27443a);
+            
+    
+            var marker_4aab2cf100b982ff4a40f20efceae53e = L.marker(
+                [55.68444, 37.342],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_e600113d83fc810e10e954ed0de31208 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ef41faca794328f781e70c8c758321b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4107d66afa15d4e8dfb46944cd6f9193 = $(`<div id="html_4107d66afa15d4e8dfb46944cd6f9193" style="width: 100.0%; height: 100.0%;"><b>Кофе-он мой?, кофейня</b><br>улица Нобеля, 5<br> 1.17 км</div>`)[0];
+                popup_9ef41faca794328f781e70c8c758321b.setContent(html_4107d66afa15d4e8dfb46944cd6f9193);
+            
+        
+
+        marker_4aab2cf100b982ff4a40f20efceae53e.bindPopup(popup_9ef41faca794328f781e70c8c758321b)
+        ;
+
+        
+    
+    
+                marker_4aab2cf100b982ff4a40f20efceae53e.setIcon(icon_e600113d83fc810e10e954ed0de31208);
+            
+    
+            var marker_06a1dfb0321f8dfd68294576214eca8f = L.marker(
+                [55.68471, 37.3409],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_d97989be5a535427ade31e521727d838 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16ae5559a52f0fdead512b87f48a0b1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b87b09518869f8bff2da992ab5e763c9 = $(`<div id="html_b87b09518869f8bff2da992ab5e763c9" style="width: 100.0%; height: 100.0%;"><b>Груша х Рэш, кофейня</b><br>улица Нобеля, 3<br> 1.19 км</div>`)[0];
+                popup_16ae5559a52f0fdead512b87f48a0b1a.setContent(html_b87b09518869f8bff2da992ab5e763c9);
+            
+        
+
+        marker_06a1dfb0321f8dfd68294576214eca8f.bindPopup(popup_16ae5559a52f0fdead512b87f48a0b1a)
+        ;
+
+        
+    
+    
+                marker_06a1dfb0321f8dfd68294576214eca8f.setIcon(icon_d97989be5a535427ade31e521727d838);
+            
+    
+            var marker_b229bf55ffbcdf270cfe3ad128b7cdc3 = L.marker(
+                [55.695317, 37.333274],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_51a1b156107fd16f992cd29dc1ef5511 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e8c220f5592fc17c5e4ee9f481e9978 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a037173d08cb47a85d4967439131968d = $(`<div id="html_a037173d08cb47a85d4967439131968d" style="width: 100.0%; height: 100.0%;"><b>Табак&вейп, магазин табачной продукции</b><br>улица Чистяковой, 1<br> 1.19 км</div>`)[0];
+                popup_1e8c220f5592fc17c5e4ee9f481e9978.setContent(html_a037173d08cb47a85d4967439131968d);
+            
+        
+
+        marker_b229bf55ffbcdf270cfe3ad128b7cdc3.bindPopup(popup_1e8c220f5592fc17c5e4ee9f481e9978)
+        ;
+
+        
+    
+    
+                marker_b229bf55ffbcdf270cfe3ad128b7cdc3.setIcon(icon_51a1b156107fd16f992cd29dc1ef5511);
+            
+    
+            var marker_d41908296ecfa18f0b3568534ae1f88e = L.marker(
+                [55.68492, 37.33979],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_47f705d50e71b9a5b382a0cc98f58559 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bda52a4bbfcb595eb6a1543189cf503e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76034548d2a2447cde8219398e3a552d = $(`<div id="html_76034548d2a2447cde8219398e3a552d" style="width: 100.0%; height: 100.0%;"><b>Кофейня</b><br>улица Нобеля, 1<br> 1.21 км</div>`)[0];
+                popup_bda52a4bbfcb595eb6a1543189cf503e.setContent(html_76034548d2a2447cde8219398e3a552d);
+            
+        
+
+        marker_d41908296ecfa18f0b3568534ae1f88e.bindPopup(popup_bda52a4bbfcb595eb6a1543189cf503e)
+        ;
+
+        
+    
+    
+                marker_d41908296ecfa18f0b3568534ae1f88e.setIcon(icon_47f705d50e71b9a5b382a0cc98f58559);
+            
+    
+            var marker_d76ee383583902a309e0b4afcbd12145 = L.marker(
+                [55.702084, 37.364697],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_67736b78879fd93389c42649ddff48a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ab58db3e66e61b266d00bde8a66bc85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_447d321decafd3479a0b54622cfb0d58 = $(`<div id="html_447d321decafd3479a0b54622cfb0d58" style="width: 100.0%; height: 100.0%;"><b>Lavendiya coffee&bakery, кофейня</b><br>бульвар Эйнштейна, 4<br> 1.25 км</div>`)[0];
+                popup_0ab58db3e66e61b266d00bde8a66bc85.setContent(html_447d321decafd3479a0b54622cfb0d58);
+            
+        
+
+        marker_d76ee383583902a309e0b4afcbd12145.bindPopup(popup_0ab58db3e66e61b266d00bde8a66bc85)
+        ;
+
+        
+    
+    
+                marker_d76ee383583902a309e0b4afcbd12145.setIcon(icon_67736b78879fd93389c42649ddff48a2);
+            
+    
+            var marker_462dc515e18e2fc9fbfe810048da8a05 = L.marker(
+                [55.701, 37.367],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_33a894049f4970450f37e78af27a7607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08ece1239e410652bb13de2900b46b15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43b81aee82a62ff7d49ce5768e571e38 = $(`<div id="html_43b81aee82a62ff7d49ce5768e571e38" style="width: 100.0%; height: 100.0%;"><b>Магазин табачной продукции</b><br>Западная улица, ст4<br> 1.27 км</div>`)[0];
+                popup_08ece1239e410652bb13de2900b46b15.setContent(html_43b81aee82a62ff7d49ce5768e571e38);
+            
+        
+
+        marker_462dc515e18e2fc9fbfe810048da8a05.bindPopup(popup_08ece1239e410652bb13de2900b46b15)
+        ;
+
+        
+    
+    
+                marker_462dc515e18e2fc9fbfe810048da8a05.setIcon(icon_33a894049f4970450f37e78af27a7607);
+            
+    
+            var marker_79e23b8707ab08e9e20312513bd9324e = L.marker(
+                [55.683711, 37.337756],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_9648da6fbe3e21eef8a4a66056c753a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da8c03e9d8af1deb8bd06ac105f81db7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39ff1e6192056443ede01ff6d7c1dfa4 = $(`<div id="html_39ff1e6192056443ede01ff6d7c1dfa4" style="width: 100.0%; height: 100.0%;"><b>Татнефть, точка кофе</b><br>Большой бульвар, 62<br> 1.40 км</div>`)[0];
+                popup_da8c03e9d8af1deb8bd06ac105f81db7.setContent(html_39ff1e6192056443ede01ff6d7c1dfa4);
+            
+        
+
+        marker_79e23b8707ab08e9e20312513bd9324e.bindPopup(popup_da8c03e9d8af1deb8bd06ac105f81db7)
+        ;
+
+        
+    
+    
+                marker_79e23b8707ab08e9e20312513bd9324e.setIcon(icon_9648da6fbe3e21eef8a4a66056c753a4);
+            
+    
+            var marker_4b7cb38d06b662aae9990c716a190154 = L.marker(
+                [55.681468, 37.341376],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_bf1be75f55945ab3272d09b3ca6d5236 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2de4469c83aeac07648efb8595974e57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6738482e7296763d540f89226d6f7184 = $(`<div id="html_6738482e7296763d540f89226d6f7184" style="width: 100.0%; height: 100.0%;"><b>Кафетерий</b><br>Большой бульвар, 67<br> 1.48 км</div>`)[0];
+                popup_2de4469c83aeac07648efb8595974e57.setContent(html_6738482e7296763d540f89226d6f7184);
+            
+        
+
+        marker_4b7cb38d06b662aae9990c716a190154.bindPopup(popup_2de4469c83aeac07648efb8595974e57)
+        ;
+
+        
+    
+    
+                marker_4b7cb38d06b662aae9990c716a190154.setIcon(icon_bf1be75f55945ab3272d09b3ca6d5236);
+            
+    
+            var marker_a9c89f0602eec62fb06e03aa6a81d2c9 = L.marker(
+                [55.695129, 37.324524],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_f07af286a8fd88e5846b6c633c9661c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_584c3227388388f3ae3e6709768e65a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_948ec2c1c8ef7ae82fad2be1c9b23e05 = $(`<div id="html_948ec2c1c8ef7ae82fad2be1c9b23e05" style="width: 100.0%; height: 100.0%;"><b>Здрасте, кофейня</b><br>улица Сколковская, 1Б<br> 1.73 км</div>`)[0];
+                popup_584c3227388388f3ae3e6709768e65a7.setContent(html_948ec2c1c8ef7ae82fad2be1c9b23e05);
+            
+        
+
+        marker_a9c89f0602eec62fb06e03aa6a81d2c9.bindPopup(popup_584c3227388388f3ae3e6709768e65a7)
+        ;
+
+        
+    
+    
+                marker_a9c89f0602eec62fb06e03aa6a81d2c9.setIcon(icon_f07af286a8fd88e5846b6c633c9661c0);
+            
+    
+            var marker_fa3bd6b3de9fa128b2f8f67b37330567 = L.marker(
+                [55.681458, 37.33277],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_e573bb73c821edd0ca415cde592889c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_064eff35519ee315d8fad3d9e40eb914 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0111ec93af405a37cb312ebba29cc84 = $(`<div id="html_a0111ec93af405a37cb312ebba29cc84" style="width: 100.0%; height: 100.0%;"><b>Coffee, кофейня</b><br>улица Сикорского, 11<br> 1.79 км</div>`)[0];
+                popup_064eff35519ee315d8fad3d9e40eb914.setContent(html_a0111ec93af405a37cb312ebba29cc84);
+            
+        
+
+        marker_fa3bd6b3de9fa128b2f8f67b37330567.bindPopup(popup_064eff35519ee315d8fad3d9e40eb914)
+        ;
+
+        
+    
+    
+                marker_fa3bd6b3de9fa128b2f8f67b37330567.setIcon(icon_e573bb73c821edd0ca415cde592889c1);
+            
+    
+            var marker_0b7e90395eacffef9fbec0cdd43811e8 = L.marker(
+                [55.709003, 37.361553],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_5ca5f056dd1e780b1b9b12588f87e592 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c8eeff6ffe63d6356d8b9e3b1469c54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fd5e8885ec20218967166424aa620a4 = $(`<div id="html_4fd5e8885ec20218967166424aa620a4" style="width: 100.0%; height: 100.0%;"><b>Азбука Вкуса, кофейня</b><br>Западная улица, 12<br> 1.84 км</div>`)[0];
+                popup_5c8eeff6ffe63d6356d8b9e3b1469c54.setContent(html_4fd5e8885ec20218967166424aa620a4);
+            
+        
+
+        marker_0b7e90395eacffef9fbec0cdd43811e8.bindPopup(popup_5c8eeff6ffe63d6356d8b9e3b1469c54)
+        ;
+
+        
+    
+    
+                marker_0b7e90395eacffef9fbec0cdd43811e8.setIcon(icon_5ca5f056dd1e780b1b9b12588f87e592);
+            
+    
+            var marker_4cb1253e3c559d5803c14534a7bf7ce8 = L.marker(
+                [55.696387, 37.322961],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_5b86cdb0912d64d3702fd46f438403a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d24b7888f2f1c960083077205a4d2fd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc7b58a080efb3297c06dbe89638bddb = $(`<div id="html_cc7b58a080efb3297c06dbe89638bddb" style="width: 100.0%; height: 100.0%;"><b>Oxofoxo, кофейня</b><br>улица Сколковская, 3а<br> 1.85 км</div>`)[0];
+                popup_d24b7888f2f1c960083077205a4d2fd3.setContent(html_cc7b58a080efb3297c06dbe89638bddb);
+            
+        
+
+        marker_4cb1253e3c559d5803c14534a7bf7ce8.bindPopup(popup_d24b7888f2f1c960083077205a4d2fd3)
+        ;
+
+        
+    
+    
+                marker_4cb1253e3c559d5803c14534a7bf7ce8.setIcon(icon_5b86cdb0912d64d3702fd46f438403a5);
+            
+    
+            var marker_c178bf7ecebc177e54df4bfd7e7dbae5 = L.marker(
+                [55.694662, 37.322287],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_8bde0426ebdd3a6671defffbab22cfc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e31109329e8277ad15a571735146c854 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fc336983cf00517a3d1f51ed6b0bd49 = $(`<div id="html_4fc336983cf00517a3d1f51ed6b0bd49" style="width: 100.0%; height: 100.0%;"><b>Луви-Луви, кафе</b><br>улица Сколковская, 1г<br> 1.86 км</div>`)[0];
+                popup_e31109329e8277ad15a571735146c854.setContent(html_4fc336983cf00517a3d1f51ed6b0bd49);
+            
+        
+
+        marker_c178bf7ecebc177e54df4bfd7e7dbae5.bindPopup(popup_e31109329e8277ad15a571735146c854)
+        ;
+
+        
+    
+    
+                marker_c178bf7ecebc177e54df4bfd7e7dbae5.setIcon(icon_8bde0426ebdd3a6671defffbab22cfc2);
+            
+    
+            var marker_4ba51d0d84443a88c1b64a8ac6eb927c = L.marker(
+                [55.702328, 37.326321],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_f2410e1696951c0f714ebb05adec7a7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eb1c06141bf6c8046dbab60e39bc1b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e08e196483e998af5d3e78dc8c5a690d = $(`<div id="html_e08e196483e998af5d3e78dc8c5a690d" style="width: 100.0%; height: 100.0%;"><b>Lightning, кофейня</b><br>Кутузовская улица, 2<br> 1.89 км</div>`)[0];
+                popup_6eb1c06141bf6c8046dbab60e39bc1b7.setContent(html_e08e196483e998af5d3e78dc8c5a690d);
+            
+        
+
+        marker_4ba51d0d84443a88c1b64a8ac6eb927c.bindPopup(popup_6eb1c06141bf6c8046dbab60e39bc1b7)
+        ;
+
+        
+    
+    
+                marker_4ba51d0d84443a88c1b64a8ac6eb927c.setIcon(icon_f2410e1696951c0f714ebb05adec7a7d);
+            
+    
+            var marker_d240f4220ad9c24a83fcea30616e5b64 = L.marker(
+                [55.703814, 37.327336],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_292ef2c0b3dc5d2fe9320a73c2dfaed4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55e4def7a1f9aa3326082cf6f89ee61d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_536f4fbe4a0cb01e5a51d5d66b424921 = $(`<div id="html_536f4fbe4a0cb01e5a51d5d66b424921" style="width: 100.0%; height: 100.0%;"><b>Бодрый, кофейня</b><br>Кутузовская улица, 4<br> 1.93 км</div>`)[0];
+                popup_55e4def7a1f9aa3326082cf6f89ee61d.setContent(html_536f4fbe4a0cb01e5a51d5d66b424921);
+            
+        
+
+        marker_d240f4220ad9c24a83fcea30616e5b64.bindPopup(popup_55e4def7a1f9aa3326082cf6f89ee61d)
+        ;
+
+        
+    
+    
+                marker_d240f4220ad9c24a83fcea30616e5b64.setIcon(icon_292ef2c0b3dc5d2fe9320a73c2dfaed4);
+            
+    
+            var marker_a95c0f69b0161ddd6f80ba50e570d193 = L.marker(
+                [55.697726, 37.321721],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_b2f72123d3cec4252984b563c2fe99b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_654f4a1f331540a3a490ed1b530db3db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4731ece8e14e337bbf0ebbef070b4ed = $(`<div id="html_c4731ece8e14e337bbf0ebbef070b4ed" style="width: 100.0%; height: 100.0%;"><b>Proper coffee, кофейня</b><br>улица Сколковская, 5а<br> 1.95 км</div>`)[0];
+                popup_654f4a1f331540a3a490ed1b530db3db.setContent(html_c4731ece8e14e337bbf0ebbef070b4ed);
+            
+        
+
+        marker_a95c0f69b0161ddd6f80ba50e570d193.bindPopup(popup_654f4a1f331540a3a490ed1b530db3db)
+        ;
+
+        
+    
+    
+                marker_a95c0f69b0161ddd6f80ba50e570d193.setIcon(icon_b2f72123d3cec4252984b563c2fe99b2);
+            
+    
+            var marker_3ef131d01ba96c2cf304e6bee1d0b642 = L.marker(
+                [55.698624, 37.320715],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_50d31343959c3cd3c3a2094ce4238b96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_354877071fbd1803486817e7390ebf2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_194f8556723f9c2705277520555f0c6e = $(`<div id="html_194f8556723f9c2705277520555f0c6e" style="width: 100.0%; height: 100.0%;"><b>F42, кофейня</b><br>улица Сколковская, 5Б<br> 2.04 км</div>`)[0];
+                popup_354877071fbd1803486817e7390ebf2f.setContent(html_194f8556723f9c2705277520555f0c6e);
+            
+        
+
+        marker_3ef131d01ba96c2cf304e6bee1d0b642.bindPopup(popup_354877071fbd1803486817e7390ebf2f)
+        ;
+
+        
+    
+    
+                marker_3ef131d01ba96c2cf304e6bee1d0b642.setIcon(icon_50d31343959c3cd3c3a2094ce4238b96);
+            
+    
+            var marker_1860fcac1b2cdd05aa77084d4e46ac78 = L.marker(
+                [55.712, 37.36],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_75653b66a2fd8a1e574b01774b74ed36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_589196c3eba0aa400f25ed26ee9742a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5efb8116e0c3a68ed9835d2dc5de77e = $(`<div id="html_c5efb8116e0c3a68ed9835d2dc5de77e" style="width: 100.0%; height: 100.0%;"><b>Family Home, кафетерий</b><br>Можайское шоссе, 1<br> 2.13 км</div>`)[0];
+                popup_589196c3eba0aa400f25ed26ee9742a9.setContent(html_c5efb8116e0c3a68ed9835d2dc5de77e);
+            
+        
+
+        marker_1860fcac1b2cdd05aa77084d4e46ac78.bindPopup(popup_589196c3eba0aa400f25ed26ee9742a9)
+        ;
+
+        
+    
+    
+                marker_1860fcac1b2cdd05aa77084d4e46ac78.setIcon(icon_75653b66a2fd8a1e574b01774b74ed36);
+            
+    
+            var marker_43479e70334ff9daa9ff99109c3673f5 = L.marker(
+                [55.700791, 37.320428],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_e7723ef753f082830bb9949e72ad910d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76f163ae17a43f525ff3fc1520c7e878 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d129dd54c4aed7c735a607f4c94f45fc = $(`<div id="html_d129dd54c4aed7c735a607f4c94f45fc" style="width: 100.0%; height: 100.0%;"><b>Бодрый, кофейня</b><br>улица Чистяковой, 67<br> 2.14 км</div>`)[0];
+                popup_76f163ae17a43f525ff3fc1520c7e878.setContent(html_d129dd54c4aed7c735a607f4c94f45fc);
+            
+        
+
+        marker_43479e70334ff9daa9ff99109c3673f5.bindPopup(popup_76f163ae17a43f525ff3fc1520c7e878)
+        ;
+
+        
+    
+    
+                marker_43479e70334ff9daa9ff99109c3673f5.setIcon(icon_e7723ef753f082830bb9949e72ad910d);
+            
+    
+            var marker_4e41e52dc24b6596b4edb9bd1413d838 = L.marker(
+                [55.706284, 37.32527],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_d03872ca2462557c88ca183938061927 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31c6c1b93a8e922c15c3df28d310f707 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccece5c81edcda73f835a7863857281f = $(`<div id="html_ccece5c81edcda73f835a7863857281f" style="width: 100.0%; height: 100.0%;"><b>Няшки&Вкусняшки, магазин</b><br>Кутузовская улица, 25<br> 2.20 км</div>`)[0];
+                popup_31c6c1b93a8e922c15c3df28d310f707.setContent(html_ccece5c81edcda73f835a7863857281f);
+            
+        
+
+        marker_4e41e52dc24b6596b4edb9bd1413d838.bindPopup(popup_31c6c1b93a8e922c15c3df28d310f707)
+        ;
+
+        
+    
+    
+                marker_4e41e52dc24b6596b4edb9bd1413d838.setIcon(icon_d03872ca2462557c88ca183938061927);
+            
+    
+            var marker_4e65fbeea0127e9d91f954d3def94864 = L.marker(
+                [55.702886, 37.319745],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_191c55f2f2698127f0f3dce15d0c854c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd373badd96ae82a4bc4e4bae4e3a5a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cad3c5456f3d819bc6f61304d3c633fa = $(`<div id="html_cad3c5456f3d819bc6f61304d3c633fa" style="width: 100.0%; height: 100.0%;"><b>Кофейня</b><br>улица Чистяковой, 52<br> 2.28 км</div>`)[0];
+                popup_bd373badd96ae82a4bc4e4bae4e3a5a4.setContent(html_cad3c5456f3d819bc6f61304d3c633fa);
+            
+        
+
+        marker_4e65fbeea0127e9d91f954d3def94864.bindPopup(popup_bd373badd96ae82a4bc4e4bae4e3a5a4)
+        ;
+
+        
+    
+    
+                marker_4e65fbeea0127e9d91f954d3def94864.setIcon(icon_191c55f2f2698127f0f3dce15d0c854c);
+            
+    
+            var marker_28eb749acb8d6af44a41f042ac0826a5 = L.marker(
+                [55.698406, 37.316664],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_97c9c13b8a33dd7e0f22a4074c572d79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcbcf6b86788100b2fc57c5f61b33221 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a02ca80647e1680fdfc4ba477df041be = $(`<div id="html_a02ca80647e1680fdfc4ba477df041be" style="width: 100.0%; height: 100.0%;"><b>Slava Bloom</b><br>Родниковая улица, 22а<br> 2.28 км</div>`)[0];
+                popup_bcbcf6b86788100b2fc57c5f61b33221.setContent(html_a02ca80647e1680fdfc4ba477df041be);
+            
+        
+
+        marker_28eb749acb8d6af44a41f042ac0826a5.bindPopup(popup_bcbcf6b86788100b2fc57c5f61b33221)
+        ;
+
+        
+    
+    
+                marker_28eb749acb8d6af44a41f042ac0826a5.setIcon(icon_97c9c13b8a33dd7e0f22a4074c572d79);
+            
+    
+            var marker_14ebe291fb54893570a53e665a09ea32 = L.marker(
+                [55.706705, 37.380246],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_d67e1837d6280c3c158208cfba356e64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_341d8dd3c9b385db3b51348b590c5fa6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af286fe2895481b9f6cf6f259fff8600 = $(`<div id="html_af286fe2895481b9f6cf6f259fff8600" style="width: 100.0%; height: 100.0%;"><b>Экспресс-кофейня</b><br>Можайское шоссе, 51<br> 2.31 км</div>`)[0];
+                popup_341d8dd3c9b385db3b51348b590c5fa6.setContent(html_af286fe2895481b9f6cf6f259fff8600);
+            
+        
+
+        marker_14ebe291fb54893570a53e665a09ea32.bindPopup(popup_341d8dd3c9b385db3b51348b590c5fa6)
+        ;
+
+        
+    
+    
+                marker_14ebe291fb54893570a53e665a09ea32.setIcon(icon_d67e1837d6280c3c158208cfba356e64);
+            
+    
+            var marker_bdfe9fc6107149df85866d01524bc960 = L.marker(
+                [55.69547, 37.39059],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_1387fc8bea5f97947d6a55c5befe5b37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_681160dc210a15941f896f69439abfab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0b17e0e044093ed96e80fdc610af260 = $(`<div id="html_d0b17e0e044093ed96e80fdc610af260" style="width: 100.0%; height: 100.0%;"><b>Campus coffee, экспресс-кофейня</b><br>Новая улица, 100<br> 2.43 км</div>`)[0];
+                popup_681160dc210a15941f896f69439abfab.setContent(html_d0b17e0e044093ed96e80fdc610af260);
+            
+        
+
+        marker_bdfe9fc6107149df85866d01524bc960.bindPopup(popup_681160dc210a15941f896f69439abfab)
+        ;
+
+        
+    
+    
+                marker_bdfe9fc6107149df85866d01524bc960.setIcon(icon_1387fc8bea5f97947d6a55c5befe5b37);
+            
+    
+            var marker_701d8955fd46a8d8c1c5bab305d250a0 = L.marker(
+                [55.69547, 37.39059],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_481ba7e54767a6e66793ea6216f4549d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d36a47f768535e5ebf04832afc17ec5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_449d53f485a3a5769a7024ac21419fbe = $(`<div id="html_449d53f485a3a5769a7024ac21419fbe" style="width: 100.0%; height: 100.0%;"><b>Кофепорт, кофейня</b><br>Новая улица, 100<br> 2.43 км</div>`)[0];
+                popup_d36a47f768535e5ebf04832afc17ec5e.setContent(html_449d53f485a3a5769a7024ac21419fbe);
+            
+        
+
+        marker_701d8955fd46a8d8c1c5bab305d250a0.bindPopup(popup_d36a47f768535e5ebf04832afc17ec5e)
+        ;
+
+        
+    
+    
+                marker_701d8955fd46a8d8c1c5bab305d250a0.setIcon(icon_481ba7e54767a6e66793ea6216f4549d);
+            
+    
+            var marker_cd159d275bf5c3c9e956215948e0fe6d = L.marker(
+                [55.700297, 37.342827],
+                {
+}
+            ).addTo(map_546ef6674764bb527bad25ee34d78ca3);
+        
+    
+            var icon_86376608351ab907bb34af217c670f32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccc7d637a7823837744e2b2f628affdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9a48c040953061ebed6a1855964417f = $(`<div id="html_b9a48c040953061ebed6a1855964417f" style="width: 100.0%; height: 100.0%;"><b> МЦД-1 Станция Сколково</b></div>`)[0];
+                popup_ccc7d637a7823837744e2b2f628affdd.setContent(html_b9a48c040953061ebed6a1855964417f);
+            
+        
+
+        marker_cd159d275bf5c3c9e956215948e0fe6d.bindPopup(popup_ccc7d637a7823837744e2b2f628affdd)
+        ;
+
+        
+    
+    
+                marker_cd159d275bf5c3c9e956215948e0fe6d.setIcon(icon_86376608351ab907bb34af217c670f32);
+            
+</script>
+</html>
